@@ -1,0 +1,3 @@
+cdbba56b5036cd0fa67016f0971de0f4fc65791f  release-1.4.4-arch.txt
+cdbba56b5036cd0fa67016f0971de0f4fc65791f  release-1.2.3-arch.txt
+2e7fb5de6bbb1b0bfa389058fea1f5d4546e7002  release-1.15.5-arch.txt
