@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 
 
@@ -19,5 +19,14 @@ copy_binary() {
 }
 
 
+signkey_path=$(echo -n $(cat sktu_private.path))
+
 copy_binary sku
+pushd sku/x86_64
+../../update.sh -s $signkey_path
+popd
+
 copy_binary skd
+pushd skd/x86_64
+../../update.sh -s $signkey_path
+popd
