@@ -1,9 +1,12 @@
 #!/bin/sh
 
 usage() {
-    echo "Usage: $0 [-s <private_key>]"
-    echo "Update latest.txt, create latest-<checksum>.txt and optionally signature files"
-    echo "-s <private_key> - create signature files with private_key"
+    echo "Usage: $0 [-s <private_key>]" 1>&2
+    echo "Create metadata for versioned files repository." 1>&2
+    echo "Update latest.txt, create latest-<checksum>.txt and optionally signatures." 1>&2
+    echo "To be used with latest-sync as a client" 1>&2
+    echo "-s <private_key> - create signature files with private_key" 1>&2
+    exit 1
 }
 
 while getopts "s:" opt; do
